@@ -1,0 +1,112 @@
+.program {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--text {
+      font-size: 2.4rem;
+      color: $color-primary-dark;
+      margin: 3rem 0 1.4rem 0;
+      white-space: nowrap;
+    }
+  }
+
+  &__story {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3.8rem;
+  }
+
+  &__shape {
+    overflow: hidden;
+    margin: 0 2rem 0 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__img {
+    height: 100%;
+    width: 10rem;
+  }
+
+  &__text {
+    margin: 0 1rem 0 0;
+    flex-basis: 60%;
+  }
+
+  &__name {
+    font-size: 2rem;
+    color: $color-primary-dark;
+  }
+
+  &__position {
+    color: $color-primary-orange;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  &__achievement {
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+  }
+
+  &__btn {
+    font-size: 2rem;
+    width: 90%;
+    height: 5rem;
+    background: none;
+    margin: 2rem 1.8rem;
+    border: 1px solid $color-primary-dark;
+    cursor: pointer;
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.422);
+    }
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary-orange;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}

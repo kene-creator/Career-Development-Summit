@@ -1,0 +1,208 @@
+.header {
+  position: relative;
+  height: 87vh;
+  background-image: url(../img/203.jpg);
+
+  background-size: cover;
+  background-position: top;
+
+  &__main-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0 3rem 3rem;
+    width: 90%;
+  }
+
+  &__title-one {
+    font-size: 2.7rem;
+    color: $color-primary-dark;
+  }
+
+  &__title-two {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 900;
+    font-family: $font-main;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(
+        to top,
+        rgba($color-primary-orange, 0.8),
+        rgba($color-primary-orange, 0.9)
+      ),
+      url(../img/conference.jpg);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: top;
+    filter: contrast(3);
+    -webkit-filter: contrast(3);
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin: 2rem auto 4rem auto;
+  }
+
+  &__paragraph {
+    font-size: 1.7rem;
+    padding: 2rem 1rem;
+    background-color: #f7f7f7;
+    margin: 0 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &__time {
+    font-size: 3rem;
+    margin: 1rem 2rem;
+    font-family: $font-main;
+    font-weight: 900;
+    color: #565656;
+  }
+
+  &__location {
+    font-size: 1.9rem;
+    margin: 0 2rem;
+    font-family: $font-body;
+    color: #565656;
+  }
+
+  &__shake {
+    width: 100%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+
+  &.open .nav__burger {
+    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    background: transparent;
+  }
+
+  &.open .nav__burger::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -webkit-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -moz-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -ms-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -o-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+  }
+
+  &.open .nav__burger::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -webkit-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -moz-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -ms-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -o-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+  }
+
+  &__burger {
+    z-index: 200;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    width: 4rem;
+    height: 0.7rem;
+    background: #565656;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 0.7rem;
+    background: #565656;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+
+  &__burger::before {
+    transform: translateY(-1.4rem);
+    -webkit-transform: translateY(-1.4rem);
+    -moz-transform: translateY(-1.4rem);
+    -ms-transform: translateY(-1.4rem);
+    -o-transform: translateY(-1.4rem);
+  }
+
+  &__burger::after {
+    transform: translateY(1.4rem);
+    -webkit-transform: translateY(1.4rem);
+    -moz-transform: translateY(1.4rem);
+    -ms-transform: translateY(1.4rem);
+    -o-transform: translateY(1.4rem);
+  }
+
+  &__items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(9px);
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+  }
+
+  &__list {
+    margin-top: 7rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-size: 2rem;
+    font-family: $font-body;
+    font-weight: 400;
+    margin: 1rem 2rem 2rem 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #565656;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    color: #565656;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #565656;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
