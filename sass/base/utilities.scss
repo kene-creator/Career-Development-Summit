@@ -35,3 +35,9 @@
   width: 10%;
   border-bottom: 2px solid $color-primary-orange;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
