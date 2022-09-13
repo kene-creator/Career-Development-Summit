@@ -1,10 +1,12 @@
 .header {
   position: relative;
-  height: 87vh;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/203.jpg);
 
   background-size: cover;
   background-position: top;
+  padding-bottom: 5rem;
 
   &__main-text {
     display: flex;
@@ -19,7 +21,8 @@
   }
 
   &__title-two {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 3.3rem;
     line-height: 4rem;
     font-weight: 900;
     font-family: $font-main;

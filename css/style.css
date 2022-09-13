@@ -52,6 +52,12 @@ body {
   justify-content: flex;
   align-items: center; }
 
+.absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .section-btn {
   width: 90%;
   margin: 4rem 2rem;
@@ -108,8 +114,8 @@ body {
     z-index: 10; }
   .featured__icon {
     fill: #fff;
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     margin-right: 2rem; }
   .featured__name {
     font-size: 2rem;
@@ -125,10 +131,12 @@ body {
 
 .header {
   position: relative;
-  height: 87vh;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/203.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  padding-bottom: 5rem; }
   .header__main-text {
     display: flex;
     flex-direction: column;
@@ -138,7 +146,8 @@ body {
     font-size: 2.7rem;
     color: #272a31; }
   .header__title-two {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 3.3rem;
     line-height: 4rem;
     font-weight: 900;
     font-family: "COCOGOOSE", sans-serif;
@@ -408,9 +417,69 @@ body {
 
 .past {
   background-color: #fff;
-  height: 58vh;
+  height: 100%;
   width: 100%;
   border-bottom: 1px solid #f6f6f6; }
+  .past__pictures {
+    flex-direction: column;
+    width: 90%;
+    height: 35rem;
+    margin: 4rem auto; }
+    .past__pictures--1 {
+      position: relative;
+      background-image: linear-gradient(to top, rgba(230, 82, 66, 0.5), rgba(230, 82, 66, 0.5)), url(../img/summit-1.jpg);
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+      background-size: contain; }
+    .past__pictures--2 {
+      position: relative;
+      background-image: linear-gradient(to top, rgba(230, 82, 66, 0.5), rgba(230, 82, 66, 0.5)), url(../img/sumit-2.jpeg);
+      width: 100%;
+      height: 100%;
+      background-size: contain; }
+    .past__pictures--heading {
+      font-size: 3rem;
+      color: #fff;
+      font-weight: 700;
+      margin-top: -2rem; }
+    .past__pictures--paragraph {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 3rem;
+      width: 90%;
+      text-align: center; }
+
+.partners {
+  background-color: #272a31;
+  height: 100%;
+  width: 100%; }
+  .partners__images {
+    width: 88%;
+    margin: 3rem auto;
+    text-align: center; }
+  .partners__logo {
+    width: 14rem;
+    height: 5rem;
+    margin: 0 3rem 3rem 0;
+    filter: saturate(0);
+    -webkit-filter: saturate(0); }
+
+.rights {
+  background-color: #fff;
+  height: 100%;
+  width: 100%; }
+  .rights__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 3rem; }
+  .rights__heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 800; }
+  .rights__paragraph {
+    font-size: 1.5rem; }
 
 .about__main-text {
   justify-content: center;

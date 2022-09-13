@@ -41,3 +41,10 @@
   justify-content: flex;
   align-items: center;
 }
+
+.absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
