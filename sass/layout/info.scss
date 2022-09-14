@@ -25,6 +25,10 @@
     text-align: center;
     font-weight: 600;
     margin-top: 1rem;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 1.8rem;
+    }
   }
 
   &__logo {
@@ -41,6 +45,12 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin: 4rem 2rem 4rem 2rem;
+
+    @media only screen and (min-width: 48em) {
+      width: 35%;
+      height: 20rem;
+      margin: 4rem auto;
+    }
 
     &--img {
       width: 100%;
@@ -61,6 +71,12 @@
     height: 35rem;
     margin: 4rem auto;
 
+    @media only screen and (min-width: 48em) {
+      flex-direction: row;
+      height: 24rem;
+      width: 65%;
+    }
+
     &--1 {
       position: relative;
       background-image: linear-gradient(
@@ -73,6 +89,10 @@
       height: 100%;
       margin-bottom: 2rem;
       background-size: contain;
+
+      @media only screen and (min-width: 48em) {
+        margin: 0 3rem 0 0;
+      }
     }
     &--2 {
       position: relative;
@@ -85,6 +105,10 @@
       width: 100%;
       height: 100%;
       background-size: contain;
+
+      @media only screen and (min-width: 48em) {
+        margin: 0 0 0 0;
+      }
     }
 
     &--heading {
@@ -109,6 +133,10 @@
   height: 100%;
   width: 100%;
 
+  @media only screen and (min-width: 48em) {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
   &__images {
     width: 88%;
     margin: 3rem auto;
@@ -121,6 +149,11 @@
     margin: 0 3rem 3rem 0;
     filter: saturate(0);
     -webkit-filter: saturate(0);
+
+    @media only screen and (min-width: 48em) {
+      width: 16rem;
+      height: 6rem;
+    }
   }
 }
 
@@ -143,5 +176,9 @@
 
   &__paragraph {
     font-size: 1.5rem;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 1.9rem;
+    }
   }
 }

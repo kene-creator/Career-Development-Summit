@@ -4,6 +4,10 @@
   height: 100%;
   width: 100%;
 
+  @media only screen and (min-width: 48em) {
+    padding-bottom: 3rem;
+  }
+
   &__background {
     position: absolute;
     top: 0;
@@ -30,11 +34,22 @@
     }
   }
 
+  &__info {
+    @media only screen and (min-width: 48em) {
+      margin: 2rem auto;
+      width: 80%;
+    }
+  }
+
   &__items {
     display: flex;
     flex-direction: column;
     list-style: none;
     z-index: 10;
+
+    @media only screen and (min-width: 48em) {
+      flex-direction: row;
+    }
   }
 
   &__list {
@@ -43,6 +58,12 @@
     width: 90%;
     margin: 0.7rem auto;
     z-index: 10;
+
+    @media only screen and (min-width: 48em) {
+      width: 70%;
+      margin: 7rem 1rem 3rem 0;
+      height: 30rem;
+    }
   }
 
   &__box {
@@ -50,6 +71,10 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+
+    @media only screen and (min-width: 48em) {
+      flex-direction: column;
+    }
   }
 
   &__icon {
@@ -57,6 +82,12 @@
     width: 7rem;
     height: 7rem;
     margin-right: 2rem;
+
+    @media only screen and (min-width: 48em) {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 1rem auto;
+    }
   }
 
   &__name {
@@ -65,6 +96,12 @@
     color: #eb4d35;
     margin-right: 2rem;
     font-weight: 900;
+
+    @media only screen and (min-width: 48em) {
+      text-align: center;
+      font-size: 1.6rem;
+      margin: 0 auto 1rem auto;
+    }
   }
 
   &__paragraph {
@@ -72,5 +109,13 @@
     line-height: 1.5rem;
     color: #fff;
     font-weight: 600;
+
+    @media only screen and (min-width: 48em) {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      font-weight: 400;
+      margin: 0 auto 1rem auto;
+    }
   }
 }

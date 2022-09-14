@@ -2,6 +2,10 @@
   &__main-text {
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 48em) {
+      margin: 10rem auto 5rem auto;
+    }
   }
 
   &__title-one {
@@ -26,5 +30,15 @@
     text-align: center;
     margin: 1rem auto;
     width: 100%;
+  }
+
+  &__content-two {
+    @media only screen and (min-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto 3rem auto;
+    }
   }
 }

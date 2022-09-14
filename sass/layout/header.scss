@@ -8,16 +8,30 @@
   background-position: top;
   padding-bottom: 5rem;
 
+  @media only screen and (min-width: 48em) {
+    height: 100%;
+    background-position: center;
+  }
+
   &__main-text {
     display: flex;
     flex-direction: column;
     margin: 10rem 0 3rem 3rem;
     width: 90%;
+
+    @media only screen and (min-width: 48em) {
+      width: 75%;
+      margin: 10rem 0 0 15rem;
+    }
   }
 
   &__title-one {
     font-size: 2.7rem;
     color: $color-primary-dark;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 3rem;
+    }
   }
 
   &__title-two {
@@ -40,10 +54,20 @@
     filter: contrast(3);
     -webkit-filter: contrast(3);
     text-transform: uppercase;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
   }
 
   &__content {
     margin: 2rem auto 4rem auto;
+
+    @media only screen and (min-width: 48em) {
+      width: 55%;
+      margin: 2rem 0 3rem 13rem;
+    }
   }
 
   &__paragraph {
@@ -52,6 +76,10 @@
     background-color: #f7f7f7;
     margin: 0 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @media only screen and (min-width: 48em) {
+      font-weight: 400;
+    }
   }
 
   &__time {
@@ -60,6 +88,10 @@
     font-family: $font-main;
     font-weight: 900;
     color: #565656;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 3.5rem;
+    }
   }
 
   &__location {
@@ -67,6 +99,11 @@
     margin: 0 2rem;
     font-family: $font-body;
     color: #565656;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 2.6rem;
+      margin: 0 1rem;
+    }
   }
 
   &__shake {
@@ -84,6 +121,10 @@
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
+
+  @media only screen and (min-width: 48em) {
+    display: none;
+  }
 
   &.open .nav__burger {
     transform: translateX(-5rem);
@@ -207,5 +248,47 @@
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+  }
+}
+
+.nav__desktop {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  height: 8rem;
+  background-color: #fff;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 10px -20px;
+
+  @media only screen and (min-width: 48em) {
+    display: flex;
+  }
+
+  &-logo {
+    margin: -1rem 2rem 0 3rem;
+  }
+
+  &-img {
+    height: 10rem;
+  }
+
+  &-items {
+    margin-right: 2rem;
+  }
+  &-list {
+    list-style: none;
+    display: flex;
+  }
+  &-item {
+    margin: 3rem 4rem auto 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  &-link {
+    text-decoration: none;
+    color: #565656;
+    white-space: nowrap;
   }
 }
