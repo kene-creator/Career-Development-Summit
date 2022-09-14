@@ -42,7 +42,6 @@ menuBtn.addEventListener('click', () => {
 });
 
 const renderMarkup = (e) => {
-  // row.innerHTML = '';
   const markup = `
   <div class="program__story">
   <div class="program__shape">
@@ -62,8 +61,6 @@ const renderMarkup = (e) => {
 };
 
 moreBtn.addEventListener('click', function (e) {
-  console.log(story.length);
-
   if (story.length === 2) {
     for (let i = 0; i < speakers.length; i++) {
       renderMarkup(i);

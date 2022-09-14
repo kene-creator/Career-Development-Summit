@@ -35,7 +35,7 @@
   &__shape {
     overflow: hidden;
     margin: 0 2rem 0 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
     background-position: center;
     background-size: cover;
   }
@@ -91,6 +91,7 @@
       border: 2px solid $color-primary-dark;
     }
   }
+
   &__icon {
     width: 2rem;
     height: 2rem;

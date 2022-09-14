@@ -3,7 +3,6 @@
   height: 100%;
   width: 100%;
   background-image: url(../img/203.jpg);
-
   background-size: cover;
   background-position: top;
   padding-bottom: 5rem;
@@ -75,7 +74,7 @@
     padding: 2rem 1rem;
     background-color: #f7f7f7;
     margin: 0 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 
     @media only screen and (min-width: 48em) {
       font-weight: 400;
@@ -126,31 +125,6 @@
     display: none;
   }
 
-  &.open .nav__burger {
-    transform: translateX(-5rem);
-    -webkit-transform: translateX(-5rem);
-    -moz-transform: translateX(-5rem);
-    -ms-transform: translateX(-5rem);
-    -o-transform: translateX(-5rem);
-    background: transparent;
-  }
-
-  &.open .nav__burger::before {
-    transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -webkit-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -moz-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -ms-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -o-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-  }
-
-  &.open .nav__burger::after {
-    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -webkit-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -moz-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -ms-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -o-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-  }
-
   &__burger {
     z-index: 200;
     position: absolute;
@@ -164,6 +138,15 @@
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+  }
+
+  &.open .nav__burger {
+    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    background: transparent;
   }
 
   &__burger::before,
@@ -196,6 +179,22 @@
     -o-transform: translateY(1.4rem);
   }
 
+  &.open .nav__burger::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -webkit-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -moz-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -ms-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -o-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+  }
+
+  &.open .nav__burger::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -webkit-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -moz-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -ms-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -o-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+  }
+
   &__items {
     position: absolute;
     top: 0;
@@ -205,8 +204,8 @@
     width: 100%;
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.725);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
@@ -260,7 +259,7 @@
   width: 100%;
   display: none;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 10px -20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 25px 10px -20px;
 
   @media only screen and (min-width: 48em) {
     display: flex;
@@ -277,15 +276,18 @@
   &-items {
     margin-right: 2rem;
   }
+
   &-list {
     list-style: none;
     display: flex;
   }
+
   &-item {
     margin: 3rem 4rem auto 0;
     font-size: 1.5rem;
     font-weight: 600;
   }
+
   &-link {
     text-decoration: none;
     color: #565656;
