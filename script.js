@@ -41,6 +41,40 @@ menuBtn.addEventListener('click', () => {
   navItems.classList.toggle('mobile');
 });
 
+const markup = `<div class="program__story">
+<div class="program__shape">
+  <img src="img/benkler.png" alt="Author" class="program__img" />
+</div>
+<div class="program__text">
+  <h2 class="program__name">Yochai Benkler</h2>
+  <h3 class="program__position">
+    Berkman Professor of Entrepreneurial Legal Studies at Harvard Law
+    School
+  </h3>
+  <p class="program__achievement">
+    Benkler, studies common-based peer production, and published his
+    seminar book the Wealth of Networks in 2006
+  </p>
+</div>
+</div>
+<div class="program__story">
+<div class="program__shape">
+  <img src="img/so-yun.jpg" alt="Author" class="program__img" />
+</div>
+<div class="program__text">
+  <h2 class="program__name">SohYeonng Noh</h2>
+  <h3 class="program__position">
+    Director of Art centre Nabi and a board member of CC Korea
+  </h3>
+  <p class="program__achievement">
+    As the main venue for new media art production in Korea, Nabi
+    promotes cross disciplinary prodections and understanding among
+    science and technology, humanities, and the Art
+  </p>
+</div>`;
+
+row.insertAdjacentHTML('afterbegin', markup);
+
 const renderMarkup = (e) => {
   const markup = `
   <div class="program__story">
