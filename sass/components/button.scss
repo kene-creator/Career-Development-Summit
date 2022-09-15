@@ -14,10 +14,14 @@
   }
 
   @media only screen and (min-width: 48em) {
-    width: 70%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem auto;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 0;
   }
 }

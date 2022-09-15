@@ -47,6 +47,7 @@
       ),
       url(../img/conference.jpg);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: cover;
     background-position: top;
@@ -292,5 +293,37 @@
     text-decoration: none;
     color: #565656;
     white-space: nowrap;
+  }
+}
+
+.top__nav {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    height: 2rem;
+    width: 100%;
+    background-color: $color-primary-dark;
+    display: inline-block;
+  }
+
+  &-items {
+    margin: 0.2rem 8rem 0 auto;
+  }
+
+  &-content {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff;
+  }
+
+  &-list {
+    color: #fff;
+    margin-right: 2rem;
   }
 }
