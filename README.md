@@ -14,6 +14,8 @@
 
 [Live Demo Link](https://kene-creator.github.io/Career-Development-Summit/)
 
+[Live Presentation Link](https://www.loom.com/share/c73569a300564b518fce53512cedb469)
+
 ## Getting Started
 
 **You should do an npm install in your terminal to install all the dev dependencies. Then do a npm start to get the code running**
