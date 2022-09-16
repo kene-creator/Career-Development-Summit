@@ -2,28 +2,30 @@
 
 # Project Name
 
-> Portfolio mobile first
+> Capstone Project
 
 ## Built With
 
 - HTML
 - CSS
+- SCSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://kene-creator.github.io/portfolio/)
+[Live Demo Link](https://kene-creator.github.io/Career-Development-Summit/)
+
+[Live Presentation Link](https://www.loom.com/share/c73569a300564b518fce53512cedb469)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-To get a local copy up and running follow these simple example steps.
+**You should do an npm install in your terminal to install all the dev dependencies. Then do a npm start to get the code running**
 
 ### Install
 
 -Webhint
 -StyleLint
+-eslint
+-node-sass
 
 ## Authors
 
@@ -46,8 +48,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Creative Common
+- Cindy Shin
 
 ## 📝 License
 

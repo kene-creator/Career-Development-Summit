@@ -1,0 +1,186 @@
+.info {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #f6f6f6;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--one {
+      font-size: 2.7rem;
+      font-weight: 600;
+      width: 70%;
+      text-align: center;
+      margin: 3rem 0 1rem 0;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    width: 90%;
+    box-shadow: rgb(134, 137, 140) 3px 3px 6px 0 inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 4rem 2rem 4rem 2rem;
+
+    @media only screen and (min-width: 48em) {
+      width: 35%;
+      height: 20rem;
+      margin: 4rem auto;
+    }
+
+    &--img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.past {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #f6f6f6;
+
+  &__pictures {
+    flex-direction: column;
+    width: 90%;
+    height: 35rem;
+    margin: 4rem auto;
+
+    @media only screen and (min-width: 48em) {
+      flex-direction: row;
+      height: 24rem;
+      width: 65%;
+    }
+
+    &--1 {
+      position: relative;
+      background-image: linear-gradient(
+          to top,
+          rgba($color-primary-orange, 0.5),
+          rgba($color-primary-orange, 0.5)
+        ),
+        url(../img/summit-1.jpg);
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+      background-size: contain;
+
+      @media only screen and (min-width: 48em) {
+        margin: 0 3rem 0 0;
+      }
+    }
+
+    &--2 {
+      position: relative;
+      background-image: linear-gradient(
+          to top,
+          rgba($color-primary-orange, 0.5),
+          rgba($color-primary-orange, 0.5)
+        ),
+        url(../img/sumit-2.jpeg);
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+
+      @media only screen and (min-width: 48em) {
+        margin: 0 0 0 0;
+      }
+    }
+
+    &--heading {
+      font-size: 3rem;
+      color: #fff;
+      font-weight: 700;
+      margin-top: -2rem;
+    }
+    
+    &--paragraph {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 3rem;
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
+
+.partners {
+  background-color: $color-primary-dark;
+  height: 100%;
+  width: 100%;
+
+  @media only screen and (min-width: 48em) {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  &__images {
+    width: 88%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 14rem;
+    height: 5rem;
+    margin: 0 3rem 3rem 0;
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+
+    @media only screen and (min-width: 48em) {
+      width: 16rem;
+      height: 6rem;
+    }
+  }
+}
+
+.rights {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 3rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 1.9rem;
+    }
+  }
+}

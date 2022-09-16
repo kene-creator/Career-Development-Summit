@@ -1,25 +1,41 @@
 .header {
   position: relative;
-  height: 87vh;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/203.jpg);
-
   background-size: cover;
   background-position: top;
+  padding-bottom: 5rem;
+
+  @media only screen and (min-width: 48em) {
+    height: 100%;
+    background-position: center;
+  }
 
   &__main-text {
     display: flex;
     flex-direction: column;
     margin: 10rem 0 3rem 3rem;
     width: 90%;
+
+    @media only screen and (min-width: 48em) {
+      width: 75%;
+      margin: 10rem 0 0 15rem;
+    }
   }
 
   &__title-one {
     font-size: 2.7rem;
     color: $color-primary-dark;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 3rem;
+    }
   }
 
   &__title-two {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 3.3rem;
     line-height: 4rem;
     font-weight: 900;
     font-family: $font-main;
@@ -31,16 +47,27 @@
       ),
       url(../img/conference.jpg);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: cover;
     background-position: top;
     filter: contrast(3);
     -webkit-filter: contrast(3);
     text-transform: uppercase;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
   }
 
   &__content {
     margin: 2rem auto 4rem auto;
+
+    @media only screen and (min-width: 48em) {
+      width: 55%;
+      margin: 2rem 0 3rem 13rem;
+    }
   }
 
   &__paragraph {
@@ -48,7 +75,11 @@
     padding: 2rem 1rem;
     background-color: #f7f7f7;
     margin: 0 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+
+    @media only screen and (min-width: 48em) {
+      font-weight: 400;
+    }
   }
 
   &__time {
@@ -57,6 +88,10 @@
     font-family: $font-main;
     font-weight: 900;
     color: #565656;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 3.5rem;
+    }
   }
 
   &__location {
@@ -64,6 +99,11 @@
     margin: 0 2rem;
     font-family: $font-body;
     color: #565656;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 2.6rem;
+      margin: 0 1rem;
+    }
   }
 
   &__shake {
@@ -82,29 +122,8 @@
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 
-  &.open .nav__burger {
-    transform: translateX(-5rem);
-    -webkit-transform: translateX(-5rem);
-    -moz-transform: translateX(-5rem);
-    -ms-transform: translateX(-5rem);
-    -o-transform: translateX(-5rem);
-    background: transparent;
-  }
-
-  &.open .nav__burger::before {
-    transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -webkit-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -moz-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -ms-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-    -o-transform: rotate(45deg) translate(3.5rem, -3.5rem);
-  }
-
-  &.open .nav__burger::after {
-    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -webkit-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -moz-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -ms-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
-    -o-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+  @media only screen and (min-width: 48em) {
+    display: none;
   }
 
   &__burger {
@@ -120,6 +139,15 @@
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+  }
+
+  &.open .nav__burger {
+    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    background: transparent;
   }
 
   &__burger::before,
@@ -152,6 +180,22 @@
     -o-transform: translateY(1.4rem);
   }
 
+  &.open .nav__burger::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -webkit-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -moz-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -ms-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+    -o-transform: rotate(45deg) translate(3.5rem, -3.5rem);
+  }
+
+  &.open .nav__burger::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -webkit-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -moz-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -ms-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+    -o-transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+  }
+
   &__items {
     position: absolute;
     top: 0;
@@ -159,10 +203,10 @@
     z-index: 100;
     backdrop-filter: blur(9px);
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.725);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
@@ -204,5 +248,82 @@
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+  }
+}
+
+.nav__desktop {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  height: 8rem;
+  background-color: #fff;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 25px 10px -20px;
+
+  @media only screen and (min-width: 48em) {
+    display: flex;
+  }
+
+  &-logo {
+    margin: -1rem 2rem 0 3rem;
+  }
+
+  &-img {
+    height: 10rem;
+  }
+
+  &-items {
+    margin-right: 2rem;
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+  }
+
+  &-item {
+    margin: 3rem 4rem auto 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #565656;
+    white-space: nowrap;
+  }
+}
+
+.top__nav {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    height: 2rem;
+    width: 100%;
+    background-color: $color-primary-dark;
+    display: inline-block;
+  }
+
+  &-items {
+    margin: 0.2rem 8rem 0 auto;
+  }
+
+  &-content {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff;
+  }
+
+  &-list {
+    color: #fff;
+    margin-right: 2rem;
   }
 }

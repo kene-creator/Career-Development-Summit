@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
 
+  @media only screen and (min-width: 48em) {
+    margin-top: -3rem;
+  }
+
   &__heading {
     display: flex;
     flex-direction: column;
@@ -22,12 +26,16 @@
     display: flex;
     width: 100%;
     margin-bottom: 3.8rem;
+
+    @media only screen and (min-width: 48em) {
+      width: 50%;
+    }
   }
 
   &__shape {
     overflow: hidden;
     margin: 0 2rem 0 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
     background-position: center;
     background-size: cover;
   }
@@ -73,7 +81,17 @@
     &:active {
       background-color: rgba(255, 255, 255, 0.422);
     }
+
+    @media only screen and (min-width: 48em) {
+      width: 29%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $color-primary-dark;
+    }
   }
+
   &__icon {
     width: 2rem;
     height: 2rem;
@@ -109,4 +127,11 @@
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
+
+  @media only screen and (min-width: 48em) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    width: 100%;
+  }
 }
