@@ -22,10 +22,10 @@
 
 ### Install
 
--Webhint
--StyleLint
--eslint
--node-sass
+- Webhint
+- StyleLint
+- eslint
+- node-sass
 
 ## Authors
 
